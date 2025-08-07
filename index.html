@@ -3,651 +3,319 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hybrid Muay Thai a gym located in Flagler County, Florida. Serving Palm Coast, and surrounding areas, come train today!" />
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
-    <title>Hybrid Muay Thai - Palm Coast Premiere Striking Gym</title>
-    <link rel="stylesheet" href="./css/tailwind.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-    <link rel="stylesheet" href="./css/aos.css" />
+    <title>Hybrid Muay Thai | Authentic Gear for Serious Fighters</title>
+    <meta name="description" content="Shop the best Muay Thai gear, handpicked from Thailand for serious nak muays. Featuring top brands like Fairtex and Twins.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap" rel="stylesheet">
     <style>
-      form {
-        color: black
-      }
+        :root {
+            --primary-color: #f75c03;
+            --dark-color: #121212;
+            --secondary-dark-color: #1e1e1e;
+            --light-color: #f5f5f5;
+        }
+
+        html, body {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            font-family: 'Oxanium', sans-serif;
+        }
+
+        .title, .subtitle, .has-text-primary {
+            color: var(--primary-color) !important;
+        }
+        
+        .has-text-light {
+            color: var(--light-color);
+        }
+
+        /* --- Navbar Styles --- */
+        .navbar {
+            background-color: var(--secondary-dark-color);
+        }
+        .navbar-item, .navbar-link {
+            color: var(--light-color);
+        }
+        .navbar-item:hover, .navbar-link:hover {
+            color: var(--primary-color);
+        }
+        .flag-icon {
+            width: 24px;
+            height: 24px;
+            margin-left: 10px;
+        }
+
+        /* --- Hero Section Styles --- */
+        .hero-banner {
+            background-color: var(--secondary-dark-color);
+            padding: 5rem 0;
+        }
+        .hero-image-container {
+            position: relative;
+            height: 100%;
+        }
+        .hero-image {
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* --- Product Cards Styles --- */
+        .section {
+            padding: 5rem 0;
+        }
+        .card {
+            background-color: var(--secondary-dark-color);
+            border: 1px solid #333;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+        .card-image img {
+            object-fit: cover;
+            height: 300px;
+            width: 100%;
+            border-bottom: 1px solid #333;
+        }
+        .card-content .subtitle {
+            color: #aaa;
+            font-size: 1rem;
+        }
+        
+        /* --- Buttons --- */
+        .button.is-primary {
+            background-color: var(--primary-color);
+            border: none;
+            color: var(--light-color);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+        }
+        .button.is-primary:hover {
+            background-color: #d14a00;
+        }
+        .card-footer-item {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            font-weight: bold;
+            padding: 1rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .card-footer-item:hover {
+            background-color: #d14a00;
+            transform: scale(1.05);
+        }
+
+        /* --- Footer --- */
+        .footer {
+            background-color: var(--secondary-dark-color);
+            color: #666;
+            padding: 2rem;
+        }
     </style>
 </head>
 <body>
-     <!-- Navbar -->
-     <nav
-     class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg"
-   >
-     <div
-       class="container px-4 mx-auto flex flex-wrap items-center justify-between"
-     >
-       <div
-         class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
-       >
-         <a
-           class="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
-           href="/"
-           >Hybrid Muay Thai</a
-         ><button
-           class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-           type="button"
-           onclick="toggleNavbar('example-collapse-navbar')"
-         >
-           <i class="text-white fas fa-bars"></i>
-         </button>
-       </div>
-       <div
-         class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
-         id="example-collapse-navbar"
-       >
-         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-           <!-- Icon 1 -->
-           <li class="flex items-center">
-             <a
-               class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-               href="https://www.facebook.com/profile.php?id=61556726529415"
-               ><i
-                 class="text-green-500 fab fa-facebook text-lg leading-lg"
-               ></i
-               ><span class="lg:hidden inline-block ml-2">Facebook</span></a
-             >
-           </li>
-           <!-- Icon 2 -->
-           <li class="flex items-center">
-             <a
-               class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-               href="https://instagram.com/hybrid.mt"
-               ><i
-                 class="text-green-500 fab fa-instagram text-lg leading-lg"
-               ></i
-               ><span class="lg:hidden inline-block ml-2">Instagram</span></a>
-           </li>
-         </ul>
-       </div>
-     </div>
-   </nav>
 
-   <!-- <div class="fixed inset-0 flex items-center justify-start z-50">
-    <div class="flex flex-col items-center space-y-3 bg-gray-800 p-4 rounded-r-lg shadow-lg">
-      <a
-        href="https://www.facebook.com/sharer/sharer.php?u=https://hybridmuaythai.com"
-        target="_blank"
-        class="group m-2"
-        aria-label="Share on Facebook"
-      >
-        <div class="flex items-center justify-center w-12 h-12 bg-blue-600 rounded-full text-white shadow-md hover:bg-blue-700 transition">
-          <i class="fab fa-facebook-f text-xl group-hover:scale-110"></i>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <span class="title is-4 has-text-primary">HYBRID MUAY THAI</span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="#">HOME</a>
+                    <a class="navbar-item" href="#top-picks">GEAR</a>
+                    <!-- <a class="navbar-item" href="#">ABOUT</a>
+                    <a class="navbar-item" href="#">CONTACT</a> -->
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <img src="https://flagcdn.com/w20/th.png" alt="Thailand Flag" class="flag-icon">
+                        <img src="https://flagcdn.com/w20/us.png" alt="USA Flag" class="flag-icon">
+                    </div>
+                </div>
+            </div>
         </div>
-      </a>
-      <a
-        href="https://twitter.com/intent/tweet?url=https://hybridmuaythai.com&text=Check%20out%20this%20awesome%20website!"
-        target="_blank"
-        class="group"
-        aria-label="Share on Twitter"
-      >
-        <div class="flex items-center justify-center w-12 h-12 bg-blue-400 rounded-full text-white shadow-md hover:bg-blue-500 transition">
-          <i class="fab fa-twitter text-xl group-hover:scale-110"></i>
+    </nav>
+
+    <section class="hero-banner">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <h1 class="title is-1 has-text-light is-spaced">
+                        Forge Your Legacy
+                    </h1>
+                    <h2 class="subtitle is-2 has-text-primary mb-5">
+                        Authentic Thai Quality
+                    </h2>
+                    <p class="is-size-5 has-text-light mb-5">
+                        Equip yourself with elite Muay Thai gear, handpicked for fighters who demand performance and durability. Train with confidence, fight with power.
+                    </p>
+                    <a href="#top-picks" class="button is-primary is-large is-rounded">
+                        SHOP NOW
+                    </a>
+                </div>
+                <div class="column is-6">
+                    <div class="hero-image-container">
+                        <img src="./img/fairtex-gloves.png" alt="Muay Thai Shin Guards" class="hero-image">
+                    </div>
+                </div>
+            </div>
         </div>
-      </a>
-      <a
-        href="https://www.linkedin.com/sharing/share-offsite/?url=https://hybridmuaythai.com"
-        target="_blank"
-        class="group"
-        aria-label="Share on LinkedIn"
-      >
-        <div class="flex items-center justify-center w-12 h-12 bg-blue-800 rounded-full text-white shadow-md hover:bg-blue-900 transition">
-          <i class="fab fa-linkedin-in text-xl group-hover:scale-110"></i>
+    </section>
+
+    <section class="section" id="top-picks">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered mb-6 has-text-primary">Our Top Picks</h2>
+            <div class="columns is-multiline is-centered">
+                
+                <div class="column is-12-mobile is-6-tablet is-4-desktop">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="https://m.media-amazon.com/images/I/817R6MD7xQL._AC_SX425_.jpg" alt="Fairtex BGV1 Muay Thai Gloves">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-5 has-text-light">Fairtex BGV1 Muay Thai Boxing Training Sparring Gloves for Men, Women, Kids</p>
+                            <p class="subtitle is-6">The Fighter's Choice</p>
+                            <p class="is-size-6">
+                                The gold standard for professional fighters. Made in Thailand with premium leather, the BGV1 offers superior wrist support and a snug, comfortable fit.
+                            </p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://amzn.to/4oEfhGq" class="card-footer-item">BUY NOW</a>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-12-mobile is-6-tablet is-4-desktop">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="https://m.media-amazon.com/images/I/511KBCPfmbL._AC_SX679_.jpg" alt="Twins Special Boxing Gloves">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-5 has-text-light">Fairtex HB6 6 Ft. Banana Bag Punching Bag</p>
+                            <p class="subtitle is-6">Unrivaled Protection</p>
+                            <p class="is-size-6">
+                                Trusted by champions. This bag can handle a beating!
+                            </p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://amzn.to/47hefts" class="card-footer-item">BUY NOW</a>
+                        </footer>
+                    </div>
+                </div>
+                
+                <div class="column is-12-mobile is-6-tablet is-4-desktop">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="https://m.media-amazon.com/images/I/71JzNTsyMgL._AC_SX425_.jpg" alt="Fairtex SP5 Shin Guards">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-5 has-text-light">Fairtex SP5 Shin Guards</p>
+                            <p class="subtitle is-6">Maximum Defense</p>
+                            <p class="is-size-6">
+                                Engineered for full-contact sparring. The SP5s provide maximum protection with a secure, ergonomic fit that stays in place no matter how hard you kick.
+                            </p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://amzn.to/47jYzFU" class="card-footer-item">BUY NOW</a>
+                        </footer>
+                    </div>
+                </div>
+
+                       
+                <div class="column is-12-mobile is-6-tablet is-4-desktop">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="https://m.media-amazon.com/images/I/81f0x8YvSiS._AC_SX425_.jpg" alt="Fairtex BGV1 Muay Thai Gloves">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-5 has-text-light">Fairtex SP6 Muay Thai Shin Guards</p>
+                            <p class="subtitle is-6">The Fighter's Choice</p>
+                            <p class="is-size-6">
+                                Premium leather. Great for sparring.
+                            </p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://amzn.to/47fERes" class="card-footer-item">BUY NOW</a>
+                        </footer>
+                    </div>
+                </div>
+
+                       
+                <div class="column is-12-mobile is-6-tablet is-4-desktop">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="https://m.media-amazon.com/images/I/81a-OQ1tL1L._AC_SX679_.jpg" alt="Fairtex Muay Thai Boxing Shorts Traditional Styles">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-5 has-text-light">Fairtex Muay Thai Boxing Shorts Traditional Styles</p>
+                            <p class="subtitle is-6">The Fighter's Choice</p>
+                            <p class="is-size-6">
+                                Train in style with these authentic Muay Thai shorts!
+                            </p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://amzn.to/4leK1uo" class="card-footer-item">BUY NOW</a>
+                        </footer>
+                    </div>
+                </div>
+
+                       
+                <div class="column is-12-mobile is-6-tablet is-4-desktop">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="https://m.media-amazon.com/images/I/B1pppR4gVKL._CLa%7C2140%2C2000%7C71OVhPQH0LL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SX679_.png" alt="Fairtex BGV1 Muay Thai Gloves">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-5 has-text-light">Muay Thai Shirt</p>
+                            <p class="subtitle is-6">The Fighter's Choice</p>
+                            <p class="is-size-6">
+                                Let the world know you train, and look good while you do.
+                            </p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://amzn.to/4fpwhfb" class="card-footer-item">BUY NOW</a>
+                        </footer>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </a>
-      <a
-        href="https://www.instagram.com"
-        target="_blank"
-        class="group"
-        aria-label="Visit Instagram"
-      >
-        <div class="flex items-center justify-center w-12 h-12 bg-pink-500 rounded-full text-white shadow-md hover:bg-pink-600 transition">
-          <i class="fab fa-instagram text-xl group-hover:scale-110"></i>
-        </div>
-      </a>
-    </div>
-  </div>
-   -->
+    </section>
 
-   <!-- Main Area -->
-   <main>
-     <!-- Hero -->
-     <div
-       class="relative pt-16 pb-32 flex content-center items-center justify-center"
-       style="min-height: 95vh"
-     >
-       <div
-         class="absolute top-0 w-full h-full bg-top bg-cover bg-center"
-         style="
-           background-image: url('./img/hybrid-05.jpg');
-         "
-       >
-         <span
-           id="blackOverlay"
-           class="w-full h-full absolute opacity-75 bg-black"
-         ></span>
-       </div>
-       <div class="container relative mx-auto" data-aos="fade-in">
-         <div class="items-center flex flex-wrap" style="margin-top: 4rem">
-           <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-             <div class="mt-8">
-               <h1 class="text-white font-semibold text-6xl mt-8">
-                 <!-- The Art of 8 <span class="text-green-500">Limbs</span> -->
-                  Hybrid Muay Thai and Kickboxing Gym
-               </h1>
-               <p class="mt-8 text-lg text-gray-300">
-                 Welcome to Hybrid Muay Thai. We are a Muay Thai 
-                 center located in Flagler County, Florida.
-               </p>
-               <a
-                 href="#contact"
-                 class="bg-transparent hover:bg-green-500 text-green-500 font-semibold hover:text-white p-4 border border-green-500 hover:border-transparent rounded inline-block mt-5 cursor-pointer"
-                 >Start Your Journey</a
-               >
-               <a
-               onclick="openModal()"
-               class="bg-green-500 hover:bg-transparent text-white font-semibold hover:text-green-500 p-4 border border-green-500 hover:border-green-500 rounded inline-block mt-5 cursor-pointer transition"
-             >
-               FREE TRIAL!
-             </a>
-
-             </div>
-           </div>
-         </div>
-       </div>
-       <div
-         class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-         style="height: 70px; transform: translateZ(0px)"
-       >
-         <svg
-           class="absolute bottom-0 overflow-hidden"
-           xmlns="http://www.w3.org/2000/svg"
-           preserveAspectRatio="none"
-           version="1.1"
-           viewBox="0 0 2560 100"
-           x="0"
-           y="0"
-         >
-           <polygon points="2560 0 2560 100 0 100"></polygon>
-         </svg>
-       </div>
-     </div>
-
-     <!-- About Section -->
-     <section id="about" class="relative py-20 bg-black text-white">
-       <div class="container mx-auto px-4">
-         <div class="items-center flex flex-wrap">
-           <div
-             class="w-full md:w-4/12 ml-auto mr-auto px-4"
-             data-aos="fade-right"
-           >
-             <img
-               alt="..."
-               class="max-w-full rounded-lg shadow-lg"
-               src="./img/hybrid-03.jpg"
-             />
-           </div>
-           <div
-             class="w-full md:w-5/12 ml-auto mr-auto px-4"
-             data-aos="fade-left"
-           >
-             <div class="md:pr-12">
-               <small class="text-green-500">About our gym</small>
-               <h3 class="text-4xl uppercase font-bold">Great Atmosphere</h3>
-               <p class="mt-4 text-lg leading-relaxed">
-                Serving Flagler County and surrounding areas. Come learn Muay Thai from one of the few Muay Thai gyms around. Whether you are just trying to get in shape, start a new hobby or even preparing for a fight, then Hybrid Muay Thai is the gym for you.
-                 <br /> 
-                 <br /> 
-                 Come make Hyrbid Muay Thai your second home!
-               </p>
-               <ul class="list-none mt-6">
-                 <li class="py-2">
-                   <div class="flex items-center">
-                     <div>
-                       <span
-                         class="font-semibold inline-block py-3 mr-3 text-green-500"
-                         ><i class="fas fa-dumbbell fa-2x"></i
-                       ></span>
-                     </div>
-                     <div>
-                       <h4 class="text-xl">
-                         The Latest & Greatest Gym equipment
-                       </h4>
-                     </div>
-                   </div>
-                 </li>
-                 <li class="py-2">
-                   <div class="flex items-center">
-                     <div>
-                       <span
-                         class="font-semibold inline-block py-3 mr-3 text-green-500"
-                         ><i class="fas fa-hard-hat fa-2x"></i
-                       ></span>
-                     </div>
-                     <div>
-                       <h4 class="text-xl">
-                        Open Monday-Saturday
-                       </h4>
-                     </div>
-                   </div>
-                 </li>
-                 <li class="py-2">
-                   <div class="flex items-center">
-                     <div>
-                       <span
-                         class="font-semibold inline-block py-3 mr-3 text-green-500"
-                         ><i class="fas fa-users fa-2x"></i
-                       ></span>
-                     </div>
-                     <div>
-                       <h4 class="text-xl">Large Padded Training Area</h4>
-                     </div>
-                   </div>
-                 </li>
-               </ul>
-             </div>
-           </div>
-         </div>
-       </div>
-     </section>
-
-     <!-- Trainers Section -->
-     <!-- <section class="pt-20 pb-48">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-wrap justify-center text-center mb-24">
-          <div class="w-full lg:w-6/12 px-4">
-            <h2 class="text-4xl font-semibold uppercase">
-              Meet Our Founder
-            </h2>
-            <p class="text-lg leading-relaxed m-4">
-              Our founders are here to dedicate the time and effort that
-              you need to get in the best shape of your life and learn the art of 8 limbs.
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p class="is-size-7">
+                Hybrid Muay Thai is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
             </p>
-          </div>
+
+             <p class="is-size-7">
+            This site is an independent affiliate and is not affiliated with or endorsed by Fairtex, Twins Special, or any other brand mentioned. Product recommendations are based on personal preference and affiliate partnerships.
+        </p>
         </div>
-        <div class="flex flex-wrap">
-          <div
-            class="w-full md:w-4/12 lg:mb-0 mb-12 px-4"
-            data-aos="flip-right"
-          >
-            <div class="px-6">
-              <img
-                alt="..."
-                src="./img/hybrid-01.jpg"
-                class="shadow-lg rounded max-w-full mx-auto"
-                style="max-width: 250px"
-              />
-              <div class="pt-6 text-center">
-                <h5 class="text-xl font-bold">Trainer 2</h5>
-                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                  lorem ipsum
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-     -->
-     <div id="modal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center hidden z-50">
-      <!-- Modal Content -->
-      <div class="bg-white w-full max-w-5xl h-screen flex flex-col">
-          <!-- Modal Header -->
-          <div class="flex justify-between items-center bg-gray-200 px-4 py-3 border-b">
-              <h2 class="text-lg font-semibold text-gray-700">Free Muay Thai Trial</h2>
-              <button onclick="closeModal()" class="text-gray-600 hover:text-gray-900 text-2xl font-bold">&times;</button>
-          </div>
-          <!-- iFrame Content -->
-          <div class="flex-grow">
-              <iframe src="https://cp.mystudio.io/t/?=400/2507/99//1739740795"
-                  class="w-full h-full border-none"></iframe>
-          </div>
-      </div>
-  </div>
+    </footer>
 
-
-     <section id="about" class="relative py-20">
-      <div class="container mx-auto px-4">
-        <div class="items-center flex flex-wrap">
-          <div
-            class="w-full md:w-5/12 ml-auto mr-auto px-4"
-            data-aos="fade-right"
-          >
-            <div class="md:pr-12">
-              <h3 class="text-4xl uppercase font-bold">Our Mission</h3>
-              <p class="mt-4 text-lg leading-relaxed">
-            Our mission is to inspire and empower individuals through the art of Muay Thai by fostering discipline, strength, and resilience. We are committed to creating a welcoming and supportive environment where students of all skill levels can develop their technique, build confidence, and achieve their personal fitness and martial arts goals while respecting the rich cultural heritage of Muay Thai.
-              </p>
-              <a
-              href="#contact"
-              class="hover:bg-green-500 text-green-500 font-semibold p-4 border border-green-500 hover:border-transparent rounded inline-block mt-5 cursor-pointer"
-              >Start Your Journey</a
-            >
-            </div>
-          </div>
-          <div
-            class="w-full md:w-4/12 ml-auto mr-auto px-4"
-            data-aos="fade-left"
-          >
-            <img
-              alt="..."
-              class="max-w-full rounded-lg shadow-lg"
-              src="./img/mission.jpg"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-<!-- <section class="pt-20 pb-8">
-      <div class="flex flex-wrap justify-center text-center mb-24">
-        <div class="w-full lg:w-6/12 px-4">
-          <h2 class="text-4xl font-semibold uppercase">
-            Our Mission
-          </h2>
-          <p class="text-lg leading-relaxd m-4">
-            Our mission is to inspire and empower individuals through the art of Muay Thai by fostering discipline, strength, and resilience. We are committed to creating a wecoming and supportive enviornment where students of all skill levels can develop their technique, build confidence, and achieve their personal fitness and martial arts goals while respecting the rich cultural heritage of Muay Thai.
-          </p>
-        </div>
-      </div>
-</section> -->
-
-     <section class="pt-20 pb-48 bg-black text-white">
-      <div class="flex flex-wrap justify-center text-center mb-24">
-        <div class="w-full lg:w-6/12 px-4">
-          <h2 class="text-4xl font-semibold uppercase">
-            Meet Our Founder
-          </h2>
-          <p class="text-lg leading-relaxed m-4">
-            My name is Vince Maccherone. First and foremost I am a student of the game. I have been involved in martial arts my entire life. My parents put me in TKD where I have competed internationally and placed in junior olympics. Later on in life I found Muay Thai, which I then started my training and competing. I have a deep level of detail to technique and making sure people know their basic fundamentals.
-          </p>
-        </div>
-      </div>
-
-      
-     <div class="container mx-auto px-4">
-      <img
-        alt="Vince of Hybrid Muay Thai"
-        src="./img/hybrid-01.jpg"
-        class="block mx-auto shadow-lg rounded max-w-full"
-        style="max-width: 350px"
-      />
-      <p class="text-center text-gray-500 mt-3">Vince with professional Muay Thai fighter, Joe Craven.</p>
-    </div>
-    </section>
-
-
-    <section class="flex justify-center items-center mb-8 mt-8">
-      <img src="./img/schedule-2025.jpg" class="max-w-full h-auto rounded-lg shadow-md" alt="Schedule" />
-    </section>
- 
-        <!-- <img src="./img/team.jpg" alt="Class Image" class="w-full rounded-md shadow-lg mb-6"> -->
-    
-    <!-- <section class="mb-12">
-      <div class="max-w-md mx-auto my-6">
-        <h1 class="uppercase text-center text-red-500 text-3xl font-bold mb-2">Class Schedule</h1>
-
-    <div class="container mx-auto px-4">
-      
-        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
-          <table class="w-full text-center">
-            <tbody>
-              <tr class="border-b border-gray-700">
-                <td class="py-3 px-4 text-red-500 text-lg font-semibold">09:30 AM</td>
-                <td class="py-3 px-4">
-                  <span class="text-white font-bold uppercase">Monday</span><br>
-                  <span class="text-gray-300">Drills/Bag Work</span>
-                </td>
-                <td class="py-3 px-4 text-gray-400 text-sm italic">with Coach Vince</td>
-              </tr>
-              <tr class="border-b border-gray-700">
-                <td class="py-3 px-4 text-red-500 text-lg font-semibold">06:45 PM</td>
-                <td class="py-3 px-4">
-                  <span class="text-white font-bold uppercase">Tuesday</span><br>
-                  <span class="text-gray-300">Technique/Pad Work</span>
-                </td>
-                <td class="py-3 px-4 text-gray-400 text-sm italic">with Coach Vince</td>
-              </tr>
-              <tr class="border-b border-gray-700">
-                <td class="py-3 px-4 text-red-500 text-lg font-semibold">06:45 PM</td>
-                <td class="py-3 px-4">
-                  <span class="text-white font-bold uppercase">Wednesday</span><br>
-                  <span class="text-gray-300">Sparring</span>
-                </td>
-                <td class="py-3 px-4 text-gray-400 text-sm italic">with Coach Vince</td>
-              </tr>
-              <tr class="border-b border-gray-700">
-                <td class="py-3 px-4 text-red-500 text-lg font-semibold">06:45 PM</td>
-                <td class="py-3 px-4">
-                  <span class="text-white font-bold uppercase">Thursday</span><br>
-                  <span class="text-gray-300">Technique/Pad Work</span>
-                </td>
-                <td class="py-3 px-4 text-gray-400 text-sm italic">with Coach Vince</td>
-              </tr>
-              <tr>
-                <td class="py-3 px-4 text-red-500 text-lg font-semibold">09:30 AM</td>
-                <td class="py-3 px-4">
-                  <span class="text-white font-bold uppercase">Saturday</span><br>
-                  <span class="text-gray-300">Sparring</span>
-                </td>
-                <td class="py-3 px-4 text-gray-400 text-sm italic">with Coach Vince</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-     -->
-    
-
-     <!-- Contact Header Section -->
-     <section class="pb-20 relative block bg-black text-white">
-       <!-- <div
-         class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-         style="height: 80px; transform: translateZ(0px)"
-       >
-         <svg
-           class="absolute bottom-0 overflow-hidden"
-           xmlns="http://www.w3.org/2000/svg"
-           preserveAspectRatio="none"
-           version="1.1"
-           viewBox="0 0 2560 100"
-           x="0"
-           y="0"
-         >
-           <polygon points="2560 0 2560 100 0 100"></polygon>
-         </svg>
-       </div> -->
-       <div class="container mx-auto px-4 lg:pt-24 lg:pb-64 pb-20 pt-20" id="contact">
-         <div class="flex flex-wrap text-center justify-center">
-           <div class="w-full lg:w-6/12 px-4">
-             <h2 class="text-4xl font-semibold text-white uppercase">
-               Contact Us
-             </h2>
-             <p class="text-lg leading-relaxed mt-4 mb-2">
-               To get started, fill out the form below
-             </p>
-           </div>
-         </div>
-       </div>
-     </section>
-     
-
-     <!-- Contact Form -->
-     <section class="relative block py-24 lg:pt-0 bg-black">
-       <div class="container mx-auto px-4">
-         <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-           <div class="w-full lg:w-6/12 px-4">
-             <div
-               class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
-               data-aos="fade-up-right"
-             >
-               <div class="flex-auto p-5 lg:p-10 bg-green-500 text-white">
-                 <h4 class="text-2xl font-semibold">Want to work with us?</h4>
-                 <p class="leading-relaxed mt-1 mb-4">
-                   Complete this form and we will get back to you in 24 hours.
-                 </p>
-                 <form action="https://formspree.io/f/mgegqrqo" method="POST">
-                 <div class="relative w-full mb-3 mt-8">
-                   <label
-                     class="block uppercase text-xs font-bold mb-2"
-                     for="full-name"
-                     >Full Name</label
-                   ><input
-                     type="text"
-                     class="px-3 py-3 placeholder-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                     placeholder="Full Name"
-                     name="name"
-                     style="transition: all 0.15s ease 0s"
-                     required
-                   />
-                 </div>
-                 <div class="relative w-full mb-3">
-                   <label
-                     class="block uppercase text-xs font-bold mb-2"
-                     for="email"
-                     >Email</label
-                   ><input
-                     type="email"
-                     class="px-3 py-3 placeholder-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                     placeholder="Email"
-                     name="email"
-                     style="transition: all 0.15s ease 0s"
-                     required
-                   />
-                 </div>
-                 <div class="relative w-full mb-3">
-                   <label
-                     class="block uppercase text-xs font-bold mb-2"
-                     for="message"
-                     >Message</label
-                   ><textarea
-                     rows="4"
-                     cols="80"
-                     class="px-3 py-3 placeholder-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                     placeholder="Type a message..."
-                     name="message"
-                     required
-                   ></textarea>
-                 </div>
-                 <div class="text-center mt-6">
-                   <button
-                     class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                     type="submit"
-                     style="transition: all 0.15s ease 0s"
-                   >
-                     Send Message
-                   </button>
-                   </div>
-                   </form>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-
-      <div class="text-center"> 
-        <a
-        onclick="openModal()"
-        class="bg-green-500 hover:bg-transparent text-white font-semibold hover:text-green-500 p-4 border border-green-500 hover:border-green-500 rounded inline-block mt-5 cursor-pointer transition"
-        >
-        FREE TRIAL!
-      </a>
-     </div>
-     </section>
-   </main>
-
-   <!-- Footer -->
-   <footer class="relative bg-gray-300 pt-8 pb-6">
-     <div
-       class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-       style="height: 80px; transform: translateZ(0px)"
-     >
-       <svg
-         class="absolute bottom-0 overflow-hidden"
-         xmlns="http://www.w3.org/2000/svg"
-         preserveAspectRatio="none"
-         version="1.1"
-         viewBox="0 0 2560 100"
-         x="0"
-         y="0"
-       >
-         <polygon
-           class="text-gray-300 fill-current"
-           points="2560 0 2560 100 0 100"
-         ></polygon>
-       </svg>
-     </div>
-     <div class="container mx-auto px-4">
-       <div class="flex flex-wrap">
-         <div class="w-full lg:w-6/12 px-4">
-           <h4 class="text-3xl font-semibold">Follow us on social media</h4>
-           <h5 class="text-lg mt-0 mb-2 text-gray-700">
-             Find us on any of these platforms, we respond 1-2 business days.
-           </h5>
-           <div class="mt-6">
-            <a href="https://www.facebook.com/profile.php?id=61556726529415" target="_blank">
-             <button
-               class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-               type="button"
-             >
-               <i
-                 class="flex fab fa-facebook-square text-green-500"
-               ></i></button
-             ></a>
-             <a href="https://instagram.com/hybrid.mt">
-             <button
-               class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-               type="button"
-             >
-               <i class="flex fab fa-instagram text-green-500"></i>
-             </button></a>
-           </div>
-         </div>
-       </div>
-       <hr class="my-6 border-gray-400" />
-       <div
-         class="flex flex-wrap items-center md:justify-between justify-center"
-       >
-         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-           <div class="text-sm text-gray-600 font-semibold py-1">
-             © 2025 Hybrid Muay Thai
-             <br />
-             <a href="privacy-policy.html" class="text-blue-500">Privacy Policy</a>
-           </div>
-         </div>
-       </div>
-     </div>
-   </footer>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-   <script>
-
-      function openModal() {
-        document.getElementById('modal').classList.remove('hidden');
-      }
-
-      function closeModal() {
-          document.getElementById('modal').classList.add('hidden');
-      }
-      
-      function toggleNavbar(collapseID) {
-        document.getElementById(collapseID).classList.toggle('hidden')
-        document.getElementById(collapseID).classList.toggle('block')
-      }
-
-
- AOS.init({
-      delay: 200,
-      duration: 1200,
-      once: false,
-    })
-   </script>
 </body>
 </html>
